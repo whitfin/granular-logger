@@ -1,0 +1,58 @@
+{
+  "name": "granular-logger",
+  "version": "0.1.0",
+  "description": "A Winston wrapper to allow time-based log files",
+  "author": {
+    "name": "Isaac Whitfield",
+    "email": "iwhitfield@appcelerator.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/iwhitfield/granular-logger.git"
+  },
+  "bugs": {
+    "email": "iwhitfield@appcelerator.com",
+    "url": "http://github.com/iwhitfield/granular-logger/issues"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "keywords": [
+    "logging",
+    "log-rotation",
+    "winston"
+  ],
+  "scripts": {
+    "coverage": "grunt coverage",
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "fs-extra": "~0.18.3",
+    "moment": "~2.10.3",
+    "winston": "~1.0.0"
+  },
+  "devDependencies": {
+    "async": "~1.0.0",
+    "blanket": "~1.1.6",
+    "codeclimate-test-reporter": "~0.0.4",
+    "grunt": "~0.4.5",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-jshint": "~0.11.2",
+    "grunt-mocha-cov": "~0.4.0",
+    "grunt-mocha-test": "~0.12.7",
+    "it-each": "~0.3.1",
+    "mocha": "~2.2.5",
+    "mocha-lcov-reporter": "~0.0.1",
+    "should": "~6.0.3"
+  },
+  "config": {
+    "blanket": {
+      "pattern": [
+        ""
+      ],
+      "data-cover-never": [
+        "node_modules",
+        "test"
+      ]
+    }
+  }
+}
